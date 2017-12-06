@@ -19,4 +19,8 @@ export class AppComponent {
     { headerName: "Model", field: "model" },
     { headerName: "Price", field: "price" }
   ]
+
+  public onGridReady(params: any){
+    params.api.sizeColumnsToFit();
+  }
 }
